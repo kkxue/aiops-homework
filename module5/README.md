@@ -1,4 +1,5 @@
 # coze 实践链接
+https://www.coze.cn/store/bot/7422506258768363572?bot_id=true
 
 # 部署RAGFlow,实现内部运维知识库
 部署系统: centos
@@ -12,4 +13,13 @@ curl -L https://github.com/docker/compose/releases/download/v2.29.7/docker-compo
 chmod +x /usr/local/bin/docker-compose
 /usr/local/bin/docker-compose --version
 ```
-然后按照老师视频中的步骤操作即可
+部署RAGFlow
+参考https://github.com/infiniflow/ragflow/blob/main/README_zh.md
+```bash
+git clone https://github.com/infiniflow/ragflow.git
+cd ragflow/docker
+chmod +x ./entrypoint.sh
+docker compose -f docker-compose.yml up -d
+```
+
+然后按照老师视频中的步骤在界面操作即可
